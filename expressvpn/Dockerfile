@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && wget -q "https://www.download-express-apps.net/clients/linux/${APPv}" -O /tmp/${APPv} \
   # && wget -q "https://www.expressvpn.works/clients/linux/${APP}" -O /tmp/${APP} \
-    && dpkg -i /tmp/${APP} \
+    && dpkg -i /tmp/${APPv} \
     && rm -rf /tmp/*.deb \
    && apt-get purge -y --auto-remove wget
 
