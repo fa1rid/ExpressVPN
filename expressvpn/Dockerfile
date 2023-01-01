@@ -1,7 +1,7 @@
 
 # Run expressvpn in a container
 
-FROM debian:bullseye-slim
+FROM debian:11-slim
 
 ENV ACTIVATION_CODE Code
 ENV LOCATION smart
